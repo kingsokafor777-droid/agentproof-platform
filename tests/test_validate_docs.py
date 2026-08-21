@@ -55,7 +55,7 @@ class DocumentationValidatorTest(unittest.TestCase):
         workflow = root / ".github" / "workflows" / "ci.yml"
         workflow.write_text(
             workflow.read_text(encoding="utf-8").replace(
-                "actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+                "actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09",
                 "actions/checkout@v4",
             ),
             encoding="utf-8",
